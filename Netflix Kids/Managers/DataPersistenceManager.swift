@@ -30,7 +30,7 @@ class DataPersistenceManager{
         item.original_title = model.original_title
         item.id = Int64(model.id)
         item.original_name = model.original_name
-        item.original_title = model.overview
+        item.overview = model.overview
         item.poster_path = model.poster_path
         item.original_language = model.original_language
         item.release_date = model.release_date
@@ -38,7 +38,7 @@ class DataPersistenceManager{
         item.vote_average = item.vote_average
         do{
             try context.save()
-            completion(.success(()))
+//            completion(.success(()))
             
         }catch{
             completion(.failure(DatabaseError.failedToSaveData))
@@ -49,7 +49,9 @@ class DataPersistenceManager{
 //        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
          let context = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
         let item = TitleItem(context: context)
-        let request :NSFetchRequest<TitleItem>
+        let request: NSFetchRequest<TitleItem>
+
+       
         request = TitleItem.fetchRequest()
         do{
             let titles = try context.fetch(request)

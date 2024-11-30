@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  Netflix Kids
@@ -15,13 +16,19 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
       
-        startLoader()
+        
         
 
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+//        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "TitlePreviewViewController")
+//        viewController.modalPresentationStyle = .fullScreen
+//       present(viewController, animated: true)
+
         let mainTabBarVC = MainTabBarViewController()
         mainTabBarVC.modalPresentationStyle = .fullScreen
         self.present(mainTabBarVC, animated: true, completion: nil)

@@ -22,7 +22,8 @@ class HomeViewController: UIViewController {
 //        }()
     
     
-    
+    public var titles:[Title] = [Title]()
+
     private var randomSelectImage :Title?
     private var headerView: HeroHeaderUIView?
     // This Array that contains header section in Home Screen
@@ -106,14 +107,14 @@ class HomeViewController: UIViewController {
     private func configureNavBar(){
         var image = UIImage(named: "netflixLogo")
         image = image?.withRenderingMode(.alwaysOriginal)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: 	image, style: .done, target: self,action: nil)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image:     image, style: .done, target: self,action: nil)
         
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
             
             
-            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+            UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), style: .done, target: self, action: nil)
         ]
         
         
@@ -192,5 +193,3 @@ extension UIViewController{
         
     }
 }
-
-

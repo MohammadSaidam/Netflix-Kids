@@ -7,50 +7,7 @@
 
 import Foundation
 import UIKit
-struct Constant {
-    //
-    //    static let API_KEY = "06b3d4ef4aa8a1338644921d5566ac0c"
-    //    static let base_URL = "https://api.themoviedb.org"
-    //    static let youtube_Api_Key = "AIzaSyD7DElrFFIUZzlH12m-tH31lVWanRlX7FE"
-    //    static let youtube_Api_Base_URL = "https://www.googleapis.com/youtube/v3/search?"
-    ////    Comedy
-    //    static let getTrendingMoviesAPI = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_genres=16,35&certification_country=US&certification.lte=PG&sort_by=popularity.desc"
-    ////    https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=12,16&sort_by=popularity.desc
-    //// Adanture
-    //    static let getTrendingMoviesCatroonAPI = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_genres=12,16&sort_by=popularity.desc"
-    //
-    ////    https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=14&certification_country=US&certification.lte=G
-    ////Fantecy
-    //    static let upCompingCartoonAPI = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_genres=14,16&certification_country=US&certification.lte=G"
-    //
-    //
-    ////    https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=16&with_keywords=sports&sort_by=popularity.desc
-    ////    https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=16&with_keywords=sports
-    ////https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=16&certification_country=US&certification.lte=G&with_keywords=sports
-    ////    https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=16,878&sort_by=popularity.desc
-    //
-    //
-    //// sifi
-    //    static let getPopularCartoonAPI = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_genres=16,878&sort_by=popularity.desc"
-    //
-    ////     Top Rated
-    ////    https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=35,12,878&sort_by=vote_average.desc&vote_count.gte=1000
-    //
-    //    static let getTopRatedAPI = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_genres=35,12,878,12,16sort_by=vote_average.desc&vote_count.gte=1000"
-    //
-    //    static let comingSoonCartoonsApi = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_genres=35,12,878,14,16&primary_release_date.gte=2020-01-01&sort_by=primary_release_date.asc&region=US&language=en-US"
-    //
-    //
-    //    static let DisneyCartoonsApi = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_companies=6125&with_genres=16"
-    //
-    //    static let getDiscoverResultsCartoonsAPI = "\(Constant.base_URL)/3/discover/movie?api_key=\(Constant.API_KEY)&with_genres=35,12,878,14,16&sort_by=popularity.desc&language=en-US&primary_release_date.gte=2023-01-01&primary_release_date.lte=2023-12-31"
-    //
-    //
-    //
-    //    /*
-    //     https://www.googleapis.com/youtube/v3/search
-    
-}
+
 enum APIError :Error{
     case failedToGetData
 }
@@ -323,7 +280,7 @@ class APICaller {
             }
             func getDisneyCatroon(completion :@escaping (Result<[Title], Error>)  -> Void){
                 
-                HomeViewController.sendRequestToServer(url: Constants.DisneyCartoonsApi) { results in
+              LoaderViewController.sendRequest(url: Constants.DisneyCartoonsApi) { results in
                     
                     switch results{
                     case .success(let get):
@@ -407,7 +364,7 @@ class APICaller {
             func search (with query:String, completion :@escaping (Result<[Title], Error>)  -> Void){
                 
                 guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)else{return}
-                guard let url = URL(string: "https://api.themoviedb.org/3/search/tv?query=\(query)&api_key=\(Constants.API_KEY)&with_genres=16&language=en-US")else{
+                guard let url = URL(string: "https://api.themoviedb.org/3/search/tv?query=\(query)&api_key=\(Constants.API_KEY)&with_genres=16,10751,35&language=en-US")else{
                     return
                 }
                 

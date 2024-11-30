@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class TitlePreviewViewController: UIViewController {
+class TitlePreviewViewController2: UIViewController {
     enum DownloadButtonType {
         case download
         case remove

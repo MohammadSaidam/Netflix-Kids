@@ -22,6 +22,7 @@
 		515AB4E12CDCD4070018769E /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515AB4E02CDCD4070018769E /* YoutubeSearchResponse.swift */; };
 		515AB4E32CDCDFD50018769E /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515AB4E22CDCDFD50018769E /* TitlePreviewViewController.swift */; };
 		515AB4E52CDCE83E0018769E /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515AB4E42CDCE83E0018769E /* TitlePreviewViewModel.swift */; };
+		516EFCB82CF08AB0001D5D50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EFCB72CF08AB0001D5D50 /* LoginViewController.swift */; };
 		519EABAB2CDE4FB700AFACB0 /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EABAA2CDE4FB700AFACB0 /* DataPersistenceManager.swift */; };
 		519EABAD2CDF85DC00AFACB0 /* extentionDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EABAC2CDF85DC00AFACB0 /* extentionDownloadViewController.swift */; };
 		519EABB02CE20BEF00AFACB0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EABAF2CE20BEF00AFACB0 /* CoreDataStack.swift */; };
@@ -62,11 +63,13 @@
 		515AB4E02CDCD4070018769E /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
 		515AB4E22CDCDFD50018769E /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
 		515AB4E42CDCE83E0018769E /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
+		516EFCB72CF08AB0001D5D50 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		519EABAA2CDE4FB700AFACB0 /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
 		519EABAC2CDF85DC00AFACB0 /* extentionDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extentionDownloadViewController.swift; path = ../../../../extentionDownloadViewController.swift; sourceTree = "<group>"; };
 		519EABAF2CE20BEF00AFACB0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		519EABB22CE5D5A600AFACB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Courses/Files in mac/xcodeProjects/Messenger/Messenger/Views/Storyboards/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		519EABB42CE9068D00AFACB0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		51CDF3522CEF263D00E278DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51FF65622CCCEAC70095D36B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Title.swift; path = ../../../../Title.swift; sourceTree = "<group>"; };
 		51FF65642CCE5E000095D36B /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 		51FF65662CCE6FEA0095D36B /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		512CC8B52CECB58C0071C9CC /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				51CDF3522CEF263D00E278DB /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -137,6 +141,21 @@
 				515AB4E22CDCDFD50018769E /* TitlePreviewViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		516EFCAD2CF07E26001D5D50 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		516EFCB62CF08A9E001D5D50 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				516EFCB72CF08AB0001D5D50 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		519EABAE2CE20BC100AFACB0 /* CoreData */ = {
@@ -214,6 +233,8 @@
 		BB91FEB9432D9D96000D2EEE /* Netflix Kids */ = {
 			isa = PBXGroup;
 			children = (
+				516EFCB62CF08A9E001D5D50 /* Login */,
+				516EFCAD2CF07E26001D5D50 /* Storyboard */,
 				512CC8B52CECB58C0071C9CC /* Firebase */,
 				512CC8AE2CEB95E20071C9CC /* Network */,
 				512CC8A92CE9E1A90071C9CC /* GoogleService-Info.plist */,
@@ -369,6 +390,7 @@
 				51FF65652CCE5E000095D36B /* Tv.swift in Sources */,
 				BB91FEBD432D9D96000D2EEE /* SceneDelegate.swift in Sources */,
 				51FF65632CCCEAC70095D36B /* Title.swift in Sources */,
+				516EFCB82CF08AB0001D5D50 /* LoginViewController.swift in Sources */,
 				512CC8AD2CE9F30F0071C9CC /* LoaderViewController.swift in Sources */,
 				512CC8B02CEB960E0071C9CC /* Reachability.swift in Sources */,
 				519EABB02CE20BEF00AFACB0 /* CoreDataStack.swift in Sources */,

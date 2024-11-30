@@ -158,9 +158,43 @@ enum Sections: Int {
 extension HomeViewController :CollectionViewTableViewCellDelegate {
     func collectionViewTableViewCellTapClick(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel) {
         DispatchQueue.main.async {[weak self] in
-            let vc = TitlePreviewViewController()
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            var vc = TitlePreviewViewController()
+//            let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            Storyboard.instantiateViewController(withIdentifier: "TitlePreviewViewController")
+            
             vc.configure(with: viewModel)
             self?.navigationController?.pushViewController(vc, animated: true)
+           
+//            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//            if let vc = storyBoard.instantiateViewController(withIdentifier: "TitlePreviewViewController") as? TitlePreviewViewController {
+//                vc.configure(with: viewModel)  // Make sure the data is passed here.
+//                self?.navigationController?.pushViewController(vc, animated: true)
+//            } else {
+//                print("Failed to instantiate TitlePreviewViewController")
+//            }
+//
+            
+//            vc.storyboard?.instantiateViewController(withIdentifier: "TitlePreviewViewController")
+//            vc.configure(with: viewModel)
+//           let viewController =  vc.storyboard?.instantiateViewController(withIdentifier: "TitlePreviewViewController")
+            
+           
+//            vc.modalPresentationStyle = .fullScreen
+//            self?.navigationController?.pushViewController(vc, animated: true)
+            
+            
+//            let viewController = storyboard.instantiateViewController(withIdentifier: "TitlePreviewViewController")
+//            viewController.modalPresentationStyle = .fullScreen
+//            self?.navigationController?.pushViewController(viewController, animated: true)
+//            vc.modalPresentationStyle = .fullScreen
+//            self?.navigationController?.pushViewController(vc, animated: true)
+            
+//
+//            let viewController = storyboard.instantiateViewController(withIdentifier: "TitlePreviewViewController")
+//            viewController.modalPresentationStyle = .fullScreen
+//            present(viewController, animated: true)
+            
         }
        
     }
