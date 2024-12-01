@@ -22,29 +22,23 @@ class TitlePreviewViewController: UIViewController {
     private let webView :WKWebView = {
         let webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
-        
-        
         return webView
         
+    }()
+    
+    private let titleTheViewController :UILabel = {
+        let label = UILabel()
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 22,weight: .bold)
+       
+        label.text = "Cartoon Detailes"
+        label.textColor = .white
+        
+        return label
         
     }()
-//    private let scrollView :UIScrollView = {
-//
-//        let scrollView = UIScrollView()
-//        scrollView.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(scrollView)
-//
-//
-//        return scrollView
-//    }()
-    
-//    private let contentView : UIView = {
-//        let view = UIView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//
-//        return view
-//
-//    }()
+
     private let scrollView : UIScrollView  = {
         
         let scrollView = UIScrollView()
@@ -59,13 +53,7 @@ class TitlePreviewViewController: UIViewController {
         
         return contentView
     }()
-    let contentView_2 : UIView = {
-        
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
- 
+
     private let closeButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -136,13 +124,14 @@ class TitlePreviewViewController: UIViewController {
         contentView.addSubview(titleOverview)
         contentView.addSubview(downloadButton)
         contentView.addSubview(closeButton)
+       
         
 //        view.addSubview(scrollView)
 //        view.addSubview(contentView)
         
-        configeConstrintes()
+       configeConstrintes()
         
-     
+      
         
      
         
@@ -164,7 +153,7 @@ class TitlePreviewViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        title = "Movie Detailes"
+      
     }
     func  configeConstrintes(){
         let scrollViewConsritnts = [
@@ -224,6 +213,7 @@ class TitlePreviewViewController: UIViewController {
             downloadButton.widthAnchor.constraint(equalToConstant: 200),
             downloadButton.heightAnchor.constraint(equalToConstant: 50)
         ]
+    
         
         
 //        let scrollViewConsraints = [
@@ -358,7 +348,8 @@ class TitlePreviewViewController: UIViewController {
     
     @IBAction func myLeftSideBarButtonItemTapped(_ sender:UIButton!)
        {
-           dismiss(animated: true)
+           self.navigationController?.popViewController(animated: true)
+         
        }
     
 

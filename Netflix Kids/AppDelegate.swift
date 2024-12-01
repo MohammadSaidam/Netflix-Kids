@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var coreDataStack: CoreDataStack = .init(modelName: "Netflix_Kids")

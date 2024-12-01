@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		512CC8AA2CE9E1A90071C9CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 512CC8A92CE9E1A90071C9CC /* GoogleService-Info.plist */; };
 		512CC8AD2CE9F30F0071C9CC /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CC8AC2CE9F30F0071C9CC /* LoaderViewController.swift */; };
 		512CC8B02CEB960E0071C9CC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CC8AF2CEB960E0071C9CC /* Reachability.swift */; };
 		512CC8B42CECAC4C0071C9CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CC8B32CECAC4C0071C9CC /* ViewController.swift */; };
@@ -50,7 +49,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		512CC8A92CE9E1A90071C9CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Users/mohammedm.saidam/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		512CC8AC2CE9F30F0071C9CC /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		512CC8AF2CEB960E0071C9CC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		512CC8B32CECAC4C0071C9CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +67,7 @@
 		519EABAF2CE20BEF00AFACB0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		519EABB22CE5D5A600AFACB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Courses/Files in mac/xcodeProjects/Messenger/Messenger/Views/Storyboards/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		519EABB42CE9068D00AFACB0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		51CDF3522CEF263D00E278DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51D7F00F2CFC83130038AE45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Users/mohammedm.saidam/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51FF65622CCCEAC70095D36B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Title.swift; path = ../../../../Title.swift; sourceTree = "<group>"; };
 		51FF65642CCE5E000095D36B /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 		51FF65662CCE6FEA0095D36B /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -117,7 +115,7 @@
 		512CC8B52CECB58C0071C9CC /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				51CDF3522CEF263D00E278DB /* GoogleService-Info.plist */,
+				51D7F00F2CFC83130038AE45 /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -237,7 +235,6 @@
 				516EFCAD2CF07E26001D5D50 /* Storyboard */,
 				512CC8B52CECB58C0071C9CC /* Firebase */,
 				512CC8AE2CEB95E20071C9CC /* Network */,
-				512CC8A92CE9E1A90071C9CC /* GoogleService-Info.plist */,
 				519EABAE2CE20BC100AFACB0 /* CoreData */,
 				BB3B7E472D24C3ED00AF9A70 /* Managers */,
 				BB3B7E462D24C3D500AF9A70 /* Resourses */,
@@ -347,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				519EABB32CE5D5A600AFACB0 /* Main.storyboard in Resources */,
-				512CC8AA2CE9E1A90071C9CC /* GoogleService-Info.plist in Resources */,
 				BB91FECA432D9D96000D2EEE /* LaunchScreen.storyboard in Resources */,
 				BB91FEC7432D9D96000D2EEE /* Assets.xcassets in Resources */,
 			);
