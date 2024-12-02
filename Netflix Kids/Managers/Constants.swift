@@ -35,8 +35,10 @@ struct Constants {
 // https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=28,12&sort_by=popularity.desc
 
 //https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&release_date.gte=2024-11-20&sort_by=release_date.asc
+    
+//https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=16,28&certification_country=US&certification.lte=G&sort_by=popularity.desc
 
-    static let getTopRatedAPI = "\(Constants.base_URL)/3/discover/movie?api_key=\(Constants.API_KEY)&with_genres=16,10751,28&certification_country=US&certification.lte=G&sort_by=popularity.desc"
+    static let getTopRatedAPI = "\(Constants.base_URL)/3/discover/movie?api_key=\(Constants.API_KEY)&with_genres=16,28&certification_country=US&certification.lte=G&sort_by=popularity.desc"
 //    https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&with_genres=16&release_date.gte=2024-11-20&sort_by=release_date.asc
 
     static let comingSoonCartoonsApi = "\(Constants.base_URL)/3/discover/movie?api_key=\(Constants.API_KEY)&with_genres=16,10751&release_date.gte=2024-11-20&sort_by=release_date.asc"

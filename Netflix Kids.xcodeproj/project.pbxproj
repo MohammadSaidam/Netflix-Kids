@@ -27,6 +27,7 @@
 		519EABB02CE20BEF00AFACB0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EABAF2CE20BEF00AFACB0 /* CoreDataStack.swift */; };
 		519EABB32CE5D5A600AFACB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519EABB12CE5D5A600AFACB0 /* Main.storyboard */; };
 		519EABB52CE9068D00AFACB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EABB42CE9068D00AFACB0 /* Constants.swift */; };
+		51D7F0112CFDB4420038AE45 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D7F0102CFDB4420038AE45 /* AboutViewController.swift */; };
 		51FF65632CCCEAC70095D36B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FF65622CCCEAC70095D36B /* Title.swift */; };
 		51FF65652CCE5E000095D36B /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FF65642CCE5E000095D36B /* Tv.swift */; };
 		51FF65672CCE6FEA0095D36B /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FF65662CCE6FEA0095D36B /* TitleCollectionViewCell.swift */; };
@@ -68,6 +69,7 @@
 		519EABB22CE5D5A600AFACB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Courses/Files in mac/xcodeProjects/Messenger/Messenger/Views/Storyboards/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		519EABB42CE9068D00AFACB0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		51D7F00F2CFC83130038AE45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Users/mohammedm.saidam/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51D7F0102CFDB4420038AE45 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ../../../../../AboutViewController.swift; sourceTree = "<group>"; };
 		51FF65622CCCEAC70095D36B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Title.swift; path = ../../../../Title.swift; sourceTree = "<group>"; };
 		51FF65642CCE5E000095D36B /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 		51FF65662CCE6FEA0095D36B /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				515AB4DA2CDB7F580018769E /* SearchResultViewController.swift */,
 				515AB4E22CDCDFD50018769E /* TitlePreviewViewController.swift */,
+				51D7F0102CFDB4420038AE45 /* AboutViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				515AB4E12CDCD4070018769E /* YoutubeSearchResponse.swift in Sources */,
 				BB3B7E492D24C45800AF9A70 /* CollectionViewTableViewCell.swift in Sources */,
 				515AB4DF2CDB87A40018769E /* extentionSearchResultViewController.swift in Sources */,
+				51D7F0112CFDB4420038AE45 /* AboutViewController.swift in Sources */,
 				BB91FED3432D9D96000D2EEE /* HomeViewController.swift in Sources */,
 				BB2671D82C943234002AC8DD /* extentionCollectionTableViewCell.swift in Sources */,
 				519EABB52CE9068D00AFACB0 /* Constants.swift in Sources */,

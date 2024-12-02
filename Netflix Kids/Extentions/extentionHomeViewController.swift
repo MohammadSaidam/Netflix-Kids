@@ -165,8 +165,8 @@ extension HomeViewController :CollectionViewTableViewCellDelegate {
             
             vc.configure(with: viewModel)
            
-            vc.modalPresentationStyle = .fullScreen
             self?.navigationController?.pushViewController(vc, animated: true)
+            
             
 //            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 //            if let vc = storyBoard.instantiateViewController(withIdentifier: "TitlePreviewViewController") as? TitlePreviewViewController {

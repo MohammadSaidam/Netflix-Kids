@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
     private var randomSelectImage :Title?
     private var headerView: HeroHeaderUIView?
     // This Array that contains header section in Home Screen
-    let sectionsTitles:[String] = ["Comedey","Adventure ","Science Fiction","Fantasy","Disney","Top Rated"]
+    let sectionsTitles:[String] = ["Comedey","Adventure ","Science Fiction","Fantasy","Disney","action"]
     
     private let homeFeedTable: UITableView = {
         
@@ -48,7 +48,8 @@ class HomeViewController: UIViewController {
 //        view.addSubview(HomeViewController.activityIndicator)
 //        HomeViewController.activityIndicator.center = view.center
         //        navigationController?.pushViewController(TitlePreviewViewController(), animated: true)
-        
+      
+       
         
         headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
@@ -69,11 +70,17 @@ class HomeViewController: UIViewController {
 //             ])
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-    
 
-    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+       super.viewDidAppear(animated)
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
+//        self.navigationController?.isNavigationBarHidden = false
+    }
    
     
     

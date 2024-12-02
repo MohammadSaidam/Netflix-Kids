@@ -130,6 +130,7 @@ class TitlePreviewViewController: UIViewController {
 //        view.addSubview(contentView)
         
        configeConstrintes()
+       self.navigationController?.setNavigationBarHidden(true, animated: true)
         
       
         

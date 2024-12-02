@@ -17,9 +17,7 @@ class TitleCollectionViewCell: UICollectionViewCell {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
         
-        
         return image
-        
         
     }()
      
